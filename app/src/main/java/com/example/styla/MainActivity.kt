@@ -13,11 +13,11 @@ import com.example.styla.ui.screens.AddItemScreen
 
 object Routes {
     const val WELCOME = "welcome"
-    const val SIGNUP = "signup"   // CoverScreen/Signup
+    const val SIGNUP = "signup"
     const val FORM = "form"
     const val LOGIN = "login"
-    const val START = "start"     // post-registro / post-login
-    const val ABOUT = "about"     // AboutYou (género, cumpleaños, estilo)
+    const val START = "start"
+    const val ABOUT = "about"
     const val CAMERA = "camera"
 }
 

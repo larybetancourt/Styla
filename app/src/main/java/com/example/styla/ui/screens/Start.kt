@@ -117,33 +117,24 @@ fun StartScreen(
     Scaffold(
         topBar = {
             TopAppBar(
-                navigationIcon = {
-                    IconButton(onClick = { /* back o menú lateral si quieres */ }) {
-                        Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
-                            contentDescription = "Volver",
-                            tint = Color.Black
-                        )
-                    }
-                },
                 title = {
                     Row(
                         modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(end = 56.dp),
+                            .fillMaxWidth(),
                         horizontalArrangement = Arrangement.Center,
                         verticalAlignment = Alignment.CenterVertically
                     ) {
                         Image(
                             painter = painterResource(id = R.drawable.styla),
                             contentDescription = "STYLA Logo",
-                            modifier = Modifier.width(300.dp),
+                            modifier = Modifier.
+                            height(260.dp),
                             contentScale = ContentScale.Fit
                         )
                     }
                 },
                 actions = {
-                    IconButton(onClick = { /* abrir menú */ }) {
+                    IconButton(onClick = { }) {
                         Icon(Icons.Filled.Menu, contentDescription = "Menú", tint = Color.Black)
                     }
                 },
@@ -174,7 +165,7 @@ fun StartScreen(
                             modifier = Modifier
                                 .weight(1f)
                                 .fillMaxHeight()
-                                // 👉 navegación: si el índice es 1 (Cámara), llamamos al callback
+                                // 👉 navegación
                                 .clickable {
                                     if (index == 1) onOpenCamera()
                                 },
